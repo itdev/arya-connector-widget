@@ -1,0 +1,9 @@
+.root {
+  padding: 20px;
+}
+
+.form {
+  display: flex;
+  flex-flow: column nowrap;
+  max-width: 600px;
+}

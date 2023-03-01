@@ -1,0 +1,15 @@
+**/*.svg
+package.json
+.DS_Store
+.eslintignore
+*.png
+.gitignore
+.prettierignore
+build/
+postcss.config.js
+config/
+scripts/
+flow/
+src/setupTests.js
+babel.config.js
+src/graphql/generated/graphql.ts

@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@100;400;500;600;700;800&display=swap');
+
+:root:root {
+  --adm-color-primary: #235ff8;
+  --adm-font-family: 'Manrope';
+  --adm-button-border-radius: 10px;
+}
+
+.root {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+  align-items: center;
+
+  .card {
+    background: #ffffff;
+    box-shadow: 0 4px 34px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    height: auto;
+    max-height: calc(100vh - 40px);
+    overflow: auto;
+
+    .cardHeader {
+      border-bottom-style: none;
+
+      :global(.adm-card-header-title) {
+        width: 100%;
+      }
+
+      .backArrowGriDItem {
+        &.hide {
+          visibility: hidden;
+        }
+      }
+    }
+
+    .buttonLabel {
+      color: #666666;
+      font-weight: 500;
+    }
+
+    .button {
+      width: 100%;
+
+      &.clockOut {
+        background-color: #ffc800;
+        border: #ffc800;
+      }
+    }
+
+    .history {
+      width: 100%;
+      border-collapse: collapse;
+
+      tr,
+      th {
+        text-align: start;
+      }
+
+      th,
+      td {
+        border-bottom: 1px solid #666666;
+      }
+    }
+  }
+
+  .footer {
+    padding: 38px 0;
+
+    .widgetButton {
+      color: #0066d1;
+      font-size: 3.8rem;
+      cursor: pointer;
+
+      &.closeState {
+        color: #202020;
+      }
+    }
+  }
+}

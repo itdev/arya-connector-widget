@@ -1,0 +1,8 @@
+.divider {
+  color: #666666;
+  border-color: #666666;
+
+  &::after {
+    max-width: 0 !important;
+  }
+}

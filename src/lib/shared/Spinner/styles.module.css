@@ -1,0 +1,16 @@
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.spinner {
+  width: 2em;
+  height: 2em;
+  border: 3px solid #f3f3f3; /* Light grey */
+  border-top: 3px solid #1677ff; /* Black */
+  border-radius: 50%;
+  animation: spinner 1.5s linear infinite;
+}
